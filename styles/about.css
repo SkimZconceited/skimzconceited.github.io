@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(209, 209, 209, 0.788);
+    overflow: hidden;
+}
+
+
+.header{
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.home-profile{
+    /* background-color: cyan; */
+    border-radius: 0% 100% 0% 100%;
+}
+
+/* this has to be round */
+.profile{
+    height: 30vh;
+    width: auto;
+    border-radius: 0% 100% 0% 100%;
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+}
+
+.passage{
+    border-style: none;
+    /* margin: 2% 0 0 0; */
+    padding: 0 20% 0 20%;
+    text-align: left;
+    text-indent: 5%;
+    text-overflow: ellipsis;
+    background: linear-gradient(180deg, rgba(209, 209, 209, 0.055) 5%, rgba(173, 216, 230, 0.39) 50%, rgba(209, 209, 209, 0.055) 90%);
+    /* background: -webkit-linear-gradient(180deg, rgba(209, 209, 209, 0.055), rgba(173, 216, 230, 0.712), rgba(209, 209, 209, 0.055));
+    background: -moz-linear-gradient(180deg, rgba(209, 209, 209, 0.055), rgba(173, 216, 230, 0.712), rgba(209, 209, 209, 0.055));
+    background: -ms-linear-gradient(180deg, rgba(209, 209, 209, 0.055), rgba(173, 216, 230, 0.712), rgba(209, 209, 209, 0.055));
+    background: -o-linear-gradient(180deg, rgba(209, 209, 209, 0.055), rgba(173, 216, 230, 0.712), rgba(209, 209, 209, 0.055)); */
+}
+.passage p{
+    line-height: 25px;
+}
+
+.passage ul{
+    text-align: left;
+    line-height: 10px;
+}
+
+/* the horizintal line under the name */
+hr.line{
+    border: 0;
+    height: 1.5px;
+    width: 90%;
+    padding: 0;
+    margin-bottom: 10px;
+    background-image: -webkit-linear-gradient(left, rgba(209, 209, 209, 0.788), #000000c4, rgba(209, 209, 209, 0.788));
+    background-image: -moz-linear-gradient(left, rgba(209, 209, 209, 0.788), #000000c4, rgba(209, 209, 209, 0.788));
+    background-image: -ms-linear-gradient(left, rgba(209, 209, 209, 0.788), #000000c4, rgba(209, 209, 209, 0.788));
+    background-image: -o-linear-gradient(left, rgba(209, 209, 209, 0.788), #000000c4, rgba(209, 209, 209, 0.788)); 
+}
+
+.icon-links{
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+/* this makes the icons appear small */
+.icon-class{
+    height: 30px;
+    width: auto;
+    margin-left: 10px;
+}
+
+/* Footer of the website specs */
+footer{
+    background-color: rgba(100, 100, 100, 0.664);
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}

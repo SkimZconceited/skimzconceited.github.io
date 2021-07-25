@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(209, 209, 209, 0.788);
+    overflow: hidden;
+}
+
+
+.home-profile{
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 0;
+}
+
+/* this makes the link clickable only on the picture */
+.plink{
+    /* background-color: blanchedalmond; */
+    border-radius: 100% 0% 100% 0%;
+}
+
+/* this has to be round */
+.profile{
+    height: 30vh;
+    width: auto;
+    border-radius: 100% 0% 100% 0%;
+}
+
+
+p{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#name{
+    margin-top: 1%;
+}
+
+.para{
+    margin: 3% 0 0 0;
+}
+
+/* the horizintal line under the name */
+hr.line{
+    border: 0;
+    height: 1.5px;
+    width: 90%;
+    padding: 0;
+    margin: 2% 0 2% 0;
+    background-image: -webkit-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788));
+    background-image: -moz-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788));
+    background-image: -ms-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788));
+    background-image: -o-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788)); 
+}
+
+.icon-links{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+/* this makes the icons appear small */
+.icon-class{
+    height: 30px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.motive{
+    margin: 10% 0 0 0;
+    /* background-color: brown; */
+    text-align: center;
+    display: grid;
+}
+.verse{
+    /* background-color: cyan; */
+    padding: 0 25% 0 25%;
+    font-style: italic;
+}
+
+hr.line2{
+    border: 0;
+    height: 1.5px;
+    width: 40%;
+    padding: 0;
+    margin: 1% 0 0 0;
+    background-image: -webkit-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788));
+    background-image: -moz-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788));
+    background-image: -ms-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788));
+    background-image: -o-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788)); 
+    justify-self: center;
+}
+
+ .verse-pointer{
+    /* background-color: burlywood; */
+     margin-top: 1%;
+     font-style: italic;
+
+ }
+
+
+/* Footer of the website specs */
+footer{
+    background-color: rgba(100, 100, 100, 0.664);
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
