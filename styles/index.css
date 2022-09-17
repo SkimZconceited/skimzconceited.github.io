@@ -1,112 +1,187 @@
+@font-face {
+    font-family: Headings;
+    src: url(../fonts/playfair-display/PlayfairDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: TitleSoftware;
+    src: url(../fonts/source-sans-pro/SourceSansPro-Semibold.ttf);
+}
+
+@font-face {
+    font-family: VerseFont;
+    src: url(../fonts/source-sans-pro/SourceSansPro-Italic.ttf);
+}
+
+@font-face {
+    font-family: BinaryFont;
+    src: url(../fonts/source-sans-pro/SourceSansPro-SemiboldItalic.ttf);
+}
+
 body{
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     background-color: rgba(209, 209, 209, 0.788);
-    overflow: hidden;
+
+    /* overflow: hidden; */
 }
 
-
-.home-profile{
-    display: grid;
-    justify-content: center;
-    margin-top: 10%;
-    padding: 0;
-}
-
-/* this makes the link clickable only on the picture */
-.plink{
-    /* background-color: blanchedalmond; */
-    border-radius: 100% 0% 100% 0%;
-}
-
-/* this has to be round */
-.profile{
-    height: 30vh;
-    width: auto;
-    border-radius: 100% 0% 100% 0%;
-}
-
-
-p{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
-
-#name{
-    margin-top: 1%;
-}
-
-.para{
-    margin: 3% 0 0 0;
-}
-
-/* the horizintal line under the name */
-hr.line{
-    border: 0;
-    height: 1.5px;
-    width: 90%;
-    padding: 0;
-    margin: 2% 0 2% 0;
-    background-image: -webkit-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788));
-    background-image: -moz-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788));
-    background-image: -ms-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788));
-    background-image: -o-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788)); 
-}
-
-.icon-links{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
-
-/* this makes the icons appear small */
-.icon-class{
-    height: 30px;
-    width: auto;
-    margin-left: 10px;
-}
-
-.motive{
-    margin: 10% 0 0 0;
-    /* background-color: brown; */
-    text-align: center;
-    display: grid;
-}
-.verse{
-    /* background-color: cyan; */
-    padding: 0 25% 0 25%;
-    font-style: italic;
-}
-
-hr.line2{
-    border: 0;
-    height: 1.5px;
-    width: 40%;
-    padding: 0;
-    margin: 1% 0 0 0;
-    background-image: -webkit-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788));
-    background-image: -moz-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788));
-    background-image: -ms-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788));
-    background-image: -o-linear-gradient(left, rgba(209, 209, 209, 0.788), #8c8b8b, rgba(209, 209, 209, 0.788)); 
-    justify-self: center;
-}
-
- .verse-pointer{
-    /* background-color: burlywood; */
-     margin-top: 1%;
-     font-style: italic;
-
- }
-
-
-/* Footer of the website specs */
-footer{
-    background-color: rgba(100, 100, 100, 0.664);
-    position: fixed;
+/* This is the upper black div part... */
+.upper_back {
+    height: 50vh;
     width: 100%;
-    text-align: center;
-    bottom: 0;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
+
+.names {
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 40%;
+    height: fit-content;
+    /* background: green; */
+}
+
+.names > #name {
+    font-family: Headings;
+    font-size: 40px;
+    text-align: right;
+    /* background: brown; */
+}
+
+.names > #title {
+    font-family: TitleSoftware;
+    font-size: 40px;
+    text-align: right;
+    margin-top: -5%;
+    /* background: purple; */
+}
+
+.bible_line {
+    height: fit-content;
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 50%;
+    font-family: VerseFont;
+    font-size: 15px;
+    /* background: red; */
+}
+
+.bible_line > #verse {
+    text-align: center;
+    /* background: yellow; */
+}
+
+.bible_line > #verse_id {
+    margin-left: 40%;
+    width: 20%;
+    /* background: blue; */
+}
+
+.image {
+    margin-top: -32.523%;
+    margin-left: 55%;
+}
+
+.image > img {
+    height: 11%;
+    width: fit-content;
+}
+/* ...the end of the upper black part (div). */
+
+/* This is the lower brighter color... */
+.lower_back {
+    height: 50vh;
+    width: 100%;
+    background:rgb(199, 199, 199);
+    display: flex;
+}
+
+.project_sec {
+    width: 50%;
+    /* background: blue; */
+}
+
+#binary_1 {
+    position: absolute;
+    font-family: BinaryFont;
+    font-size: 10px;
+    margin-top: 4.2%;
+    margin-left: 13%;
+    /* background: orchid; */
+}
+
+.vl {
+    border-left: 2px solid black;
+    border-radius: 50%;
+    margin-top: 2.6%;
+    height: 357px;
+}
+
+.social_sec {
+    width: 50%;
+    /* background: red; */
+}
+
+.social_sec > a, .social_sec > img {
+    text-decoration: none;
+    position: absolute;
+    height: 30%;
+}
+
+#proj, #soc {
+    font-family: Headings;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 20%;
+    /* background: orange; */
+}
+
+#binary_2 {
+    position: absolute;
+    font-family: BinaryFont;
+    font-size: 10px;
+    margin-top: 3.7%;
+    margin-left: 14%;
+    /* background: orchid; */
+}
+
+/* #gmail, #github, #instagram, #linkedin, #twitter {
+    height: 10%;
+} */
+
+#gmail {
+    margin-top: 90%;
+    margin-left: 10%;
+    height: 50%;
+}
+
+#github {
+    margin-top: 190%;
+    margin-left: 150%;
+    height: 40%;
+}
+
+#instagram {
+    margin-top: 330%;
+    margin-left: 380%;
+    height: 30%;
+}
+
+#linkedin {
+    margin-top: 255%;
+    margin-left: 490%;
+    height: 33%;
+}
+
+#twitter {
+    margin-top: 200%;
+    margin-left: 690%;
+    height: 30%;
+}
+/* ...this is the end of the lower brighter part. */
